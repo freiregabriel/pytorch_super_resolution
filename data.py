@@ -75,4 +75,3 @@ def get_test_set(upscale_factor):
     return DatasetFromFolder(test_dir,
                              input_transform=input_transform(crop_size, upscale_factor),
                              target_transform=target_transform(crop_size))
-download_bsd500()
