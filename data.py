@@ -10,14 +10,12 @@ import tarfile
 def download_bsd300():
     url = "http://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300-images.tgz"
     dest_dir = join('dataset', "BSDS300/images")
-    output_image_dir = download_data(url, dest_dir)
-    return output_image_dir
+    return download_data(url, dest_dir)
 
 def download_bsd500():
     url = "http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz"
     dest_dir = join('dataset', "BSR/BSDS500/data/images")
-    output_image_dir = download_data(url, dest_dir)
-    return output_image_dir
+    return download_data(url, dest_dir)
 
 def download_data(url, save_dir, dest='dataset'):
     output_image_dir = save_dir
